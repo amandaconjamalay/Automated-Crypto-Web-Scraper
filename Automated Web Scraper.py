@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd
@@ -11,8 +5,6 @@ import os
 from datetime import datetime
 import time 
 
-
-# In[ ]:
 
 
 def automated_crypto_pull():
@@ -50,9 +42,6 @@ def automated_crypto_pull():
     print(df)
 
 
-# In[ ]:
-
-
 # While function is true keeping looping every hour.
 while True: 
     automated_crypto_pull()
@@ -60,7 +49,6 @@ while True:
     time.sleep(3600)
 
 
-# In[ ]:
 
 
 
