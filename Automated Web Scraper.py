@@ -34,10 +34,10 @@ def automated_crypto_pull():
     df = pd.DataFrame([dict])
 
     # If file exists in file path add info to existing file, else create csv. 
-    if os.path.exists(r'</FilePath/'):
-        df.to_csv(r'</FilePath/', mode='a', header= False, index = False)
+    if os.path.exists(r'</FilePath/Chosen_File.csv'):
+        df.to_csv(r'</FilePath/Chosen_File.csv', mode='a', header= False, index = False)
     else:
-        df.to_csv(r'</FilePath/', index = False)
+        df.to_csv(r'</FilePath/Chosen_File.csv', index = False)
     # So we can have tab open without it erroring out
     print(df)
 
